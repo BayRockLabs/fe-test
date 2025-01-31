@@ -1,0 +1,56 @@
+let suffix_role = "";
+if (process.env.REACT_APP_PROFILE !== "prod") {
+  suffix_role = "_demo";
+}
+
+const ROLES = {
+  ALL: [
+    "c2c_super_admin" + suffix_role,
+    "c2c_viewer" + suffix_role,
+    "c2c_client_viewer" + suffix_role,
+    "c2c_client_admin" + suffix_role,
+    "c2c_est_viewer" + suffix_role,
+    "c2c_est_admin" + suffix_role,
+    "c2c_pricing_viewer" + suffix_role,
+    "c2c_pricing_admin" + suffix_role,
+    "c2c_sow_viewer" + suffix_role,
+    "c2c_sow_admin" + suffix_role,
+    "c2c_milestone_viewer" + suffix_role,
+    "c2c_milestone_admin" + suffix_role,
+    "c2c_po_viewer" + suffix_role,
+    "c2c_po_admin" + suffix_role,
+    "c2c_allocation_viewer" + suffix_role,
+    "c2c_allocation_admin" + suffix_role,
+    "c2c_invoice_admin" + suffix_role,
+    "c2c_invoice_viewer" + suffix_role,
+  ],
+  SUPER_ADMIN: "c2c_super_admin" + suffix_role,
+  VIEWER: "c2c_viewer" + suffix_role,
+  CLIENT_VIEW: "c2c_client_viewer" + suffix_role,
+  CLIENT_ADMIN: "c2c_client_admin" + suffix_role,
+  EST_VIEW: "c2c_est_viewer" + suffix_role,
+  EST_ADMIN: "c2c_est_admin" + suffix_role,
+  PRICING_VIEW: "c2c_pricing_viewer" + suffix_role,
+  PRICING_ADMIN: "c2c_pricing_admin" + suffix_role,
+  SOW_VIEW: "c2c_sow_viewer" + suffix_role,
+  SOW_ADMIN: "c2c_sow_admin" + suffix_role,
+  MILESTONE_VIEW: "c2c_milestone_viewer" + suffix_role,
+  MILESTONE_ADMIN: "c2c_milestone_admin" + suffix_role,
+  PO_VIEW: "c2c_po_viewer" + suffix_role,
+  PO_ADMIN: "c2c_po_admin" + suffix_role,
+  ALLOCATION_VIEW: "c2c_allocation_viewer" + suffix_role,
+  ALLOCATION_ADMIN: "c2c_allocation_admin" + suffix_role,
+  RESOURCE_VIEW: "c2c_resource_viewer" + suffix_role,
+  TIMESHEET_VIEW: "c2c_timesheet_manager" + suffix_role,
+  TIMESHEET_ADMIN: "c2c_timesheet_admin" + suffix_role,
+  DASHBOARD_VIEW: "c2c_dashboard_viewer" + suffix_role,
+  INVOICE_VIEW: "c2c_invoice_viewer" + suffix_role,
+  INVOICE_ADMIN: "c2c_invoice_admin" + suffix_role,
+  GUEST_USER: "c2c_guest_employee" + suffix_role,
+  TIMESHEET_EXPORT_USER: "c2c_timesheet_export_user" + suffix_role,
+  HR_MANAGER: "c2c_hr_manager" + suffix_role,
+  PMO_USER: "c2c_pmo_user" + suffix_role,
+  TIMESHEET_EMPLOYEE: "c2c_timesheet_employee" + suffix_role,
+};
+
+export default ROLES;

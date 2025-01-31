@@ -1,0 +1,32 @@
+[
+    {
+      "region": "India",
+      "country_code": "in",
+      "url": "google.co.in",
+      "languages": [
+        {
+          "name": "USD",
+          "code": "en"
+        },
+        {
+          "name": "INR",
+          "code": "hi"
+        }
+      ]
+    },
+    {
+      "region": "USA",
+      "country_code": "ae",
+      "url": "google.ae",
+      "languages": [
+        {
+          "name": "EUR",
+          "code": "ar"
+        },
+        {
+          "name": "BTC",
+          "code": "en"
+        }
+      ]
+    }
+  ]

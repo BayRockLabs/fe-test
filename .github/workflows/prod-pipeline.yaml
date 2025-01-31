@@ -1,0 +1,56 @@
+name: Empty the Container & Upload the new files to Production Bucket
+
+on:
+  workflow_dispatch:
+
+env:
+  container: 'https://${{ secrets.BUCKET_NAME }}.blob.core.windows.net/$web'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout GitHub Action'
+        uses: actions/checkout@v2
+
+      - name: Install azcopy
+        uses: kheiakiyama/install-azcopy-action@v1.0.3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Specify the version of Node.js to use
+
+      - name: Install Dependencies
+        run: |
+          npm ci --legacy-peer-deps  # Clean install using package-lock.json
+
+      - name: Build React App
+        run: |
+          CI=false npm run build
+
+      # Delete all files in the container
+      - name: Empty the container
+        run: |
+          echo "Emptying the container..."
+          azcopy remove '${{ env.container }}?${{ secrets.SAS_TOKEN }}' --recursive || exit 1
+
+      # Copy the contents of the current directory
+      - name: Copy new files
+        run: |
+          echo "Copying new files..."
+          azcopy copy 'build/*' '${{ env.container }}?${{ secrets.SAS_TOKEN }}' --recursive --from-to=LocalBlob || exit 1
+
+      # Purge Azure CDN cache
+      - name: Login to Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS_FOR_STORAGE }}
+
+      - name: Purge CDN endpoint
+        run: |
+          az afd endpoint purge \
+          --resource-group c2c-production \
+          --profile-name prod-profile \
+          --endpoint-name c2c \
+          --content-paths "/*"

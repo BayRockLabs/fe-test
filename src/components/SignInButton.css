@@ -1,0 +1,33 @@
+.SignInBtn {
+    display: block;
+    width: 240px!important;
+    border-radius: 4px !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: #01CCFF!important;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+    padding: 8px 16px !important;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 17px !important;
+    margin-bottom: 15px !important;
+    margin-left: 0px !important;
+    text-align: center !important;
+    width: 100%;
+    font-size: 12px!important;
+    color: #000 !important;
+    font-weight: 600;
+    height: 36px !important;
+}
+
+/* .SignInBtn div {
+    text-align: left !important;
+} */
+
+.SignInBtn svg {
+    height: 20px !important;
+    width: 20px !important;
+    text-align: right !important;
+    margin-left: 20px;
+}

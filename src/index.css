@@ -1,0 +1,61 @@
+.css-ef8so-MuiButtonBase-root-MuiListItemButton-root:hover{
+  color: #0a58ca;
+  font-weight: 600; 
+ background-color: #797b8014;
+}
+.css-ef8so-MuiButtonBase-root-MuiListItemButton-r.css-kzapdc-MuiSvgIcon-root:hover{
+  color: #000;
+  font-weight: 600; 
+}
+
+@media (max-width:480px){
+  .MuiTypography-root.MuiTypography-body1.css-1fxwoh3-MuiTypography-root{
+    font-size: 17px;
+  }
+  .MuiStack-root.css-pl8gqh-MuiStack-root{
+    align-items: center;
+  }
+
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.css-pgibje-MuiButtonBase-root-MuiButton-root{
+    line-height: normal;
+    height: auto;
+    margin-top:0;
+  }
+}
+
+@media(max-width:600px) {
+  .css-wjh20t-MuiPagination-ul{
+    flex-wrap: nowrap;
+  }
+  .css-1w0g6uz-MuiTypography-root{
+    font-size:11px !important;
+  }
+
+}
+
+@media(max-width:768px) {
+
+  .css-1pyy021-MuiTabs-flexContainer{
+    overflow: auto;
+  }
+  .MuiBox-root.css-wg90n8{
+    gap:10px;
+  }
+  .MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-colorPrimary.css-pgibje-MuiButtonBase-root-MuiButton-root{
+    line-height: normal;
+    height: auto;
+    margin-top: 0px;
+  }
+  .css-rgl0p2-MuiPaper-root{
+    margin-left:16px
+  }
+  .MuiTableHead-root.css-15wwp11-MuiTableHead-root,
+  .MuiTableBody-root.css-apqrd9-MuiTableBody-root {
+    white-space: nowrap;  
+  }
+  .css-gscbae-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+    border-radius: 8px;
+      border: 1px solid #ddd;
+  }
+
+}

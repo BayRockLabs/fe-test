@@ -1,0 +1,89 @@
+name: Run Cypress Tests on Pull Request
+
+on:
+  workflow_dispatch:
+permissions:
+  pages: write
+  id-token: write
+
+jobs:
+  cypress-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Application Repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js for Application
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
+      - name: Install Dependencies for Application
+        run: npm install
+
+      - name: Start Application
+        run: npm run start &
+        env:
+          CI: true
+
+      - name: Wait for Application
+        run: |
+          echo "Waiting for localhost:3000 to be available..."
+          for i in {1..30}; do
+            if curl --fail http://localhost:3000; then
+              echo "Application is running!"
+              exit 0
+            fi
+            echo "Waiting..."
+            sleep 5
+          done
+          echo "Application failed to start"
+          exit 1
+
+      - name: Checkout Cypress Repo
+        uses: actions/checkout@v3
+        with:
+          repository: https://github.com/BayRockLabs/qa-automation
+          ref: cypress-workflow
+          token: ${{ secrets.CYPRESS_REPO_PAT }}
+          path: cypress-tests
+
+      - name: Set up Node.js for Cypress
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install Dependencies for Cypress
+        run: npm install
+        working-directory: ./cypress-tests
+
+      - name: Create cypress.env.json
+        run: |
+          echo "${{ secrets.CYPRESS_ENV_JSON }}" > ./cypress-tests/cypress.env.json
+
+      - name: Run Cypress Tests
+        uses: cypress-io/github-action@v5
+        with:
+          working-directory: ./cypress-tests
+          start: false
+          wait-on: http://localhost:3000
+          browser: chrome
+
+      - name: Upload Cypress Test Results
+        uses: actions/upload-artifact@v3
+        with:
+          path: ./cypress-tests/cypress/reports
+
+  deployCoverageReport:
+    runs-on: ubuntu-latest
+    needs: [cypress-tests]
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
+        with:
+          folder: ./cypress-tests/cypress/reports

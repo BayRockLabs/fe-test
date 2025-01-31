@@ -1,0 +1,53 @@
+name: 'Create & Push C2C UI Docker Image'
+
+on:
+  push:
+    branches:
+      - develop
+      
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: 'Checkout GitHub Action'
+          uses: actions/checkout@main
+        - name: Set outputs
+          id: vars
+          run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        - name: 'Login via Azure CLI'
+          uses: azure/login@v1
+          with:
+            creds:  ${{ secrets.AZURE_CREDENTIALS }} 
+        
+        - name: 'Build and push image'
+          uses: azure/docker-login@v1
+          with:
+            login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
+            username: ${{ secrets.REGISTRY_USERNAME }}
+            password: ${{ secrets.REGISTRY_PASSWORD }}
+        - run: |
+            IMAGE_TAG=${{ steps.vars.outputs.sha_short }}
+            docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/c2c-ui:${IMAGE_TAG}
+            docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/c2c-ui:${IMAGE_TAG}
+
+    deploy:
+      needs: build
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+        - name: Set outputs
+          id: vars
+          run: echo "sha_short=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+        - name: 'Login via Azure CLI'
+          uses: azure/login@v1
+          with:
+            creds: ${{secrets.AZURE_CREDENTIALS}}
+        - name: deploy Container App
+          uses: azure/container-apps-deploy-action@v1
+          with:
+            acrName: c2cacr
+            containerAppName: c2c-ui
+            resourceGroup: c2c-demo
+            imageToDeploy: c2cacr.azurecr.io/c2c-ui:${{ steps.vars.outputs.sha_short }}

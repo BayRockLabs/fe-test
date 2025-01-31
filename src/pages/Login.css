@@ -1,0 +1,271 @@
+/* Add custom CSS for Login page */
+body {
+  /* background-color: #f5f5f5; */
+}
+
+.LoginPage {
+  background-image: url("../assets/mps-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  display: flex;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  color: #fff;
+  padding: 3rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  );
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 70px;
+}
+
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 24px;
+  width: 220px;
+}
+
+.divider {
+  width: 57%;
+  height: 0.2px;
+  margin: 1rem 0;
+  background-color: #01ccff;
+  opacity: 1;
+  color: #01ccff;
+  margin-top: 8px;
+}
+
+.left-section {
+  width: 50%;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0.8, 0.8, 0.8),
+    rgba(0, 0.8, 0.8, 0.8)
+  );
+}
+
+.left-section h3 {
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+  color: #01ccff;
+  margin-bottom: 0px !important;
+}
+
+.left-section span {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #b7b7b7;
+}
+
+.right-section {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0.8, 0.8, 0.8),
+    rgba(0, 0.8, 0.8, 0.8)
+  );
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+}
+
+.form-container {
+  background-color: rgba(109, 109, 109, 0.153);
+  padding: 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.login-heading {
+  color: #fff;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 23px;
+  text-align: left;
+}
+
+.login-subtext {
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  text-align: left;
+  font-weight: 200;
+}
+
+.login-button {
+  margin-top: 32px;
+}
+
+.register-link {
+  margin-top: 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.register-link a {
+  color: white;
+  text-decoration: none;
+}
+
+/* .LoginPage::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(0.5, 0.5, 0.5, 0.8);
+} */
+
+h3 {
+  margin-bottom: 16px;
+  /* Add some spacing below heading */
+}
+
+.logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.signInButton {
+  margin-top: 16px;
+  /* Add spacing above sign-in button */
+}
+
+/* Customize link color */
+a {
+  color: #007bff;
+  /* Blue link color */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.right-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -8px;
+  /* Adjust the value to control the spread of the shadow */
+  height: 100%;
+  width: 8px;
+  /* Adjust the width to match the spread of the shadow */
+  background: rgba(0, 0, 0, 0.1);
+  /* Adjust the color and opacity of the shadow */
+}
+
+.login-form {
+  max-width: 300px;
+  /* Limit the width of the login form */
+}
+
+.input-field {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  /* Use Roboto font for input fields */
+  font-size: 16px;
+}
+
+.css-yog34a {
+  padding-top: 253px;
+  width: 480px;
+  height: 290px;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+  /* Blue border color on focus */
+}
+
+.login-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  /* Blue button background color */
+  color: #fff;
+  /* White button text color */
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  /* Use Roboto font for buttons */
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #dc3545;
+  /* Red error message color */
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/*Responsive breakpoint from here*/
+@media only screen and (max-width: 700px) {
+  .LoginPage {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-section {
+    width: 100%;
+  }
+  .right-section {
+    width: 100%;
+    padding: 56px;
+  }
+  .center-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 2px;
+  }
+  .form-container {
+    position: relative;
+    bottom: 30%;
+  }
+  .left-section h3 {
+    margin-top: 30px;
+  }
+  .divider {
+    width: 30%;
+  }
+}

@@ -1,0 +1,750 @@
+[
+    {
+        "uuid": "c4932068-712a-4e84-a392-45b1cc533a92",
+        "role_type": "UI/UX Designer",
+        "role_skills": [
+            {
+                "id": 1,
+                "name": "Figma"
+            }
+        ],
+        "pay_rate": [
+            {
+                "region": "EU",
+                "Expertise_Level": "Advanced",
+                "default_pay_rate": 70
+            },
+            {
+                "region": "US",
+                "Expertise_Level": "Intermediate",
+                "default_pay_rate": 50
+            },
+            {
+                "region": "IN",
+                "Expertise_Level": "Basic",
+                "default_pay_rate": 40
+            }
+        ]
+    },
+    {
+        "uuid": "eff312f1-7d1b-45e2-b137-e03ba006973a",
+        "role_type": "UI/UX Developer",
+        "role_skills": [
+            {
+                "id": 2,
+                "name": "HTML"
+            },
+            {
+                "id": 3,
+                "name": "CSS"
+            }
+        ],
+        "pay_rate": [
+            {
+                "region": "EU",
+                "pay_rate": 70,
+                "Expertise_Level": "Advanced"
+            },
+            {
+                "region": "EU",
+                "pay_rate": 50,
+                "Expertise_Level": "Intermediate"
+            },
+            {
+                "region": "EU",
+                "pay_rate": 40,
+                "Expertise_Level": "Basic"
+            }
+        ]
+    },
+    {
+        "uuid": "6f9be0ef-5eb4-4240-82cc-6e96b9f94d9f",
+        "role_type": "Front end Developer",
+        "role_skills": [
+            {
+                "id": 4,
+                "name": "Javascript"
+            },
+            {
+                "id": 5,
+                "name": "Jquery"
+            },
+            {
+                "id": 6,
+                "name": "React"
+            },
+            {
+                "id": 7,
+                "name": "Angular"
+            },
+            {
+                "id": 8,
+                "name": "VueJS"
+            }
+        ],
+        "pay_rate": [
+            {
+                "region": "US",
+                "Expertise_Level": "Advanced",
+                "Default_pay_rate": 70
+            },
+            {
+                "region": "US",
+                "pay_rate": 50,
+                "Expertise_Level": "Intermediate"
+            },
+            {
+                "region": "US",
+                "pay_rate": 40,
+                "Expertise_Level": "Basic"
+            }
+        ]
+    },
+    {
+        "uuid": "0ebebf60-4ee3-4ade-b3c2-527e82960c3c",
+        "role_type": "Backend Developer",
+        "role_skills": [
+            {
+                "id": 9,
+                "name": "Java"
+            },
+            {
+                "id": 10,
+                "name": "NodeJS"
+            },
+            {
+                "id": 11,
+                "name": "Python"
+            }
+        ],
+        "pay_rate": [
+            {
+                "region": "EU",
+                "Expertise_Level": "Advanced",
+                "default_pay_rate": 70
+            },
+            {
+                "region": "US",
+                "Expertise_Level": "Intermediate",
+                "default_pay_rate": 50
+            },
+            {
+                "region": "IN",
+                "Expertise_Level": "Basic",
+                "default_pay_rate": 40
+            }
+        ]
+    },
+    {
+        "uuid": "d1a1b895-67f4-4e7d-8537-8a8ea041d8df",
+        "role_type": "QA Analyst",
+        "role_skills": [
+            {
+                "id": 12,
+                "name": "Manual"
+            },
+            {
+                "id": 13,
+                "name": "Automation"
+            }
+        ],
+        "pay_rate": [
+            {
+                "region": "EU",
+                "Expertise_Level": "Advanced",
+                "default_pay_rate": 70
+            },
+            {
+                "region": "US",
+                "Expertise_Level": "Intermediate",
+                "default_pay_rate": 50
+            },
+            {
+                "region": "IN",
+                "Expertise_Level": "Basic",
+                "default_pay_rate": 40
+            }
+        ]
+    },
+    {
+        "uuid": "f1ebc4ec-b659-4e13-8b61-e73f0f49fb44",
+        "role_type": "Cloud Engineer",
+        "role_skills": [
+            {
+                "id": 14,
+                "name": "Cloudformation"
+            },
+            {
+                "id": 15,
+                "name": "Terraform"
+            }
+        ],
+        "pay_rate": [
+            {
+                "region": "EU",
+                "Expertise_Level": "Advanced",
+                "default_pay_rate": 70
+            },
+            {
+                "region": "US",
+                "Expertise_Level": "Intermediate",
+                "default_pay_rate": 50
+            },
+            {
+                "region": "IN",
+                "Expertise_Level": "Basic",
+                "default_pay_rate": 40
+            }
+        ]
+    },
+    {
+        "uuid": "647b64ab-0d8a-49d9-86e7-7c10114241f1",
+        "role_type": "Devops Engineer",
+        "role_skills": [
+            {
+                "id": 16,
+                "name": "Github"
+            },
+            {
+                "id": 17,
+                "name": "Jenkins"
+            },
+            {
+                "id": 18,
+                "name": "Containers"
+            },
+            {
+                "id": 19,
+                "name": "Kubernetes"
+            }
+        ],
+        "pay_rate": [
+            {
+                "region": "EU",
+                "Expertise_Level": "Advanced",
+                "default_pay_rate": 70
+            },
+            {
+                "region": "US",
+                "Expertise_Level": "Intermediate",
+                "default_pay_rate": 50
+            },
+            {
+                "region": "IN",
+                "Expertise_Level": "Basic",
+                "default_pay_rate": 40
+            }
+        ]
+    },
+    {
+        "uuid": "95c05389-ab0a-4ac8-b81f-24d3c42db6a8",
+        "role_type": "Cloud Architect",
+        "role_skills": [
+            {
+                "id": 20,
+                "name": "AWS"
+            },
+            {
+                "id": 21,
+                "name": "Azure"
+            },
+            {
+                "id": 22,
+                "name": "Google"
+            },
+            {
+                "id": 23,
+                "name": "OpenShift"
+            }
+        ],
+        "pay_rate": [
+            {
+                "region": "EU",
+                "Expertise_Level": "Advanced",
+                "default_pay_rate": 70
+            },
+            {
+                "region": "US",
+                "Expertise_Level": "Intermediate",
+                "default_pay_rate": 50
+            },
+            {
+                "region": "IN",
+                "Expertise_Level": "Basic",
+                "default_pay_rate": 40
+            }
+        ]
+    },
+    {
+        "uuid": "14be6923-8786-436c-ba05-9dadef28fc78",
+        "role_type": "Delivery Manager",
+        "role_skills": [],
+        "pay_rate": [
+            {
+                "region": "EU",
+                "Expertise_Level": "Advanced",
+                "default_pay_rate": 70
+            },
+            {
+                "region": "US",
+                "Expertise_Level": "Intermediate",
+                "default_pay_rate": 50
+            },
+            {
+                "region": "IN",
+                "Expertise_Level": "Basic",
+                "default_pay_rate": 40
+            }
+        ]
+    },
+    {
+        "uuid": "69076220-3995-4efc-8520-0eddbdbb66e4",
+        "role_type": "Product Owner",
+        "role_skills": [],
+        "pay_rate": [
+            {
+                "region": "EU",
+                "Expertise_Level": "Advanced",
+                "default_pay_rate": 70
+            },
+            {
+                "region": "US",
+                "Expertise_Level": "Intermediate",
+                "default_pay_rate": 50
+            },
+            {
+                "region": "IN",
+                "Expertise_Level": "Basic",
+                "default_pay_rate": 40
+            }
+        ]
+    },
+    {
+        "uuid": "47ca8d58-7686-4082-aa91-06f0d30decdc",
+        "role_type": "UI/UX Designer",
+        "role_skills": [],
+        "pay_rate": {}
+    },
+    {
+        "uuid": "6a45f98d-48e7-4bb6-bf31-eca18fd19274",
+        "role_type": "UI/UX Designer",
+        "role_skills": [],
+        "pay_rate": {}
+    },
+    {
+        "uuid": "90eeb5f7-a1c3-4454-8d9e-b5bc62cb40fd",
+        "role_type": "FullStack Developer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "2523f047-c076-4a85-bb25-ede43f14ebcb",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "4583c90b-9e5e-4f7b-bc81-9531a1a530a3",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "6411a062-4c8c-4de6-9d7a-e6693dfe02f3",
+        "role_type": "FullStack Developer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "92004b6b-29f8-4a0a-9c80-93bc5f0ca1b2",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "d4e464c1-92fe-4a33-9515-8e927ad8ccc5",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 4,
+            "Expertise_Level": "2",
+            "default_pay_rate": 4
+        }
+    },
+    {
+        "uuid": "2539f139-6dec-4ee1-a3e3-a960bd81e5d5",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 4,
+            "Expertise_Level": "2",
+            "default_pay_rate": 4
+        }
+    },
+    {
+        "uuid": "ff693e81-4750-430f-86e9-e39405f1eaed",
+        "role_type": "UI Designer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 2,
+            "Expertise_Level": "1",
+            "default_pay_rate": 2
+        }
+    },
+    {
+        "uuid": "62d5a781-ea04-43e8-aedb-ebacdfcecb07",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "1d489285-0ccd-4790-bb67-7bda78726a92",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 3,
+            "Expertise_Level": "2",
+            "default_pay_rate": 3
+        }
+    },
+    {
+        "uuid": "3934afe8-05c9-45b8-b8b6-90de206e890d",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 3,
+            "Expertise_Level": "2",
+            "default_pay_rate": 3
+        }
+    },
+    {
+        "uuid": "a2cf06cd-a60a-4601-a976-a3b2f385867e",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 4,
+            "Expertise_Level": "2",
+            "default_pay_rate": 4
+        }
+    },
+    {
+        "uuid": "fd61ef33-8607-4e09-97c3-4e16ac7643de",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "3c2bd5fb-076d-4d39-9ed3-0d70a4d71d6c",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "ee9b0c9b-2cfe-4d0a-9aaf-6c57cf800531",
+        "role_type": "UI Designer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 2,
+            "Expertise_Level": "1",
+            "default_pay_rate": 2
+        }
+    },
+    {
+        "uuid": "c9b11bbf-ac64-4b47-a480-8f011a144d55",
+        "role_type": "cloud Architect",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 2,
+            "Expertise_Level": "1",
+            "default_pay_rate": 2
+        }
+    },
+    {
+        "uuid": "48e8ace3-ca43-4b61-9c8f-7432dc76d7e2",
+        "role_type": "cloud Architect",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 4,
+            "Expertise_Level": "2",
+            "default_pay_rate": 4
+        }
+    },
+    {
+        "uuid": "27b81534-3ccd-4150-8635-f3cfc0872a20",
+        "role_type": "FullStack Developer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 2,
+            "Expertise_Level": "1",
+            "default_pay_rate": 2
+        }
+    },
+    {
+        "uuid": "4480b527-4c5b-4ebc-891f-2ad6a3f63416",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "dec0293d-5220-436a-a1dc-e995cca9451d",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "372b5830-a99f-4ab3-9982-5d06a7cdfc47",
+        "role_type": "UI Designer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 4,
+            "Expertise_Level": "2",
+            "default_pay_rate": 4
+        }
+    },
+    {
+        "uuid": "77d92958-02b2-4f35-a37c-b7d065f14759",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 3,
+            "Expertise_Level": "2",
+            "default_pay_rate": 3
+        }
+    },
+    {
+        "uuid": "47396b8f-1bd5-4e43-bce4-3cdc6de7a3a3",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "889928c7-e910-4c1f-b278-0383c5d307ef",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "e04f8aff-06a6-440f-845e-7291dc65c823",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 4,
+            "Expertise_Level": "2",
+            "default_pay_rate": 4
+        }
+    },
+    {
+        "uuid": "ec461b42-9bd1-4a8c-b30c-b767e6c3d5c3",
+        "role_type": "cloud Architect",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 4,
+            "Expertise_Level": "2",
+            "default_pay_rate": 4
+        }
+    },
+    {
+        "uuid": "0d30549d-d4b3-4d76-8cc3-1fd90673445e",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "9f01953f-d5e8-406f-840a-f1090bef0a72",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "5b6f47df-6c20-40a2-a2d5-1a89efb87012",
+        "role_type": "UI Designer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "768b9353-e77f-43c3-a852-8f322013b764",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "2eaf447f-92d2-4033-9408-10884ee59523",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "f3efa3ae-c2d6-4b59-b422-29f8d3e81507",
+        "role_type": "FullStack Developer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "afcbbab1-ec0e-4509-941e-0820f087759c",
+        "role_type": "UI Designer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": 1
+        }
+    },
+    {
+        "uuid": "4f55fdcd-29a3-4007-a2f4-7e480eeda000",
+        "role_type": "UI Designer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 3,
+            "Expertise_Level": "2",
+            "default_pay_rate": 3
+        }
+    },
+    {
+        "uuid": "190d4b53-ad0e-490e-88ab-d173eab51008",
+        "role_type": "string",
+        "role_skills": [],
+        "pay_rate": {}
+    },
+    {
+        "uuid": "a2c4626d-c75f-4327-83fe-57ed3ed87901",
+        "role_type": "0",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 1,
+            "Expertise_Level": "1",
+            "default_pay_rate": ""
+        }
+    },
+    {
+        "uuid": "81b8ba76-e2fe-4d8e-851f-e23b79f8a86d",
+        "role_type": "0",
+        "role_skills": [],
+        "pay_rate": {
+            "region": "",
+            "Expertise_Level": "",
+            "default_pay_rate": ""
+        }
+    },
+    {
+        "uuid": "ca6eb264-687b-4251-9887-63b48edba2b8",
+        "role_type": "Devops ENG",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 2,
+            "Expertise_Level": "1",
+            "default_pay_rate": 2
+        }
+    },
+    {
+        "uuid": "1e8022c5-0bea-45ad-ac1f-22b1e5d17560",
+        "role_type": "UI Designer",
+        "role_skills": [],
+        "pay_rate": {
+            "region": 4,
+            "Expertise_Level": "2",
+            "default_pay_rate": 4
+        }
+    },
+    {
+        "uuid": "4b5d0b44-e75d-4a31-ae12-87727d2816f5",
+        "role_type": "0",
+        "role_skills": [],
+        "pay_rate": {
+            "region": "",
+            "Expertise_Level": "",
+            "default_pay_rate": ""
+        }
+    },
+    {
+        "uuid": "79039c2a-59ab-4a25-8a6e-1642e9034346",
+        "role_type": "0",
+        "role_skills": [],
+        "pay_rate": {
+            "region": "",
+            "Expertise_Level": "",
+            "default_pay_rate": ""
+        }
+    },
+    {
+        "uuid": "2b44c910-e5ec-4b40-b9e9-081bd7ade1e9",
+        "role_type": "QA Analyst",
+        "role_skills": [],
+        "pay_rate": {
+            "region": "",
+            "Expertise_Level": "0",
+            "default_pay_rate": ""
+        }
+    }
+]
