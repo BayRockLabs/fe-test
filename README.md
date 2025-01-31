@@ -1,5 +1,5 @@
 
-# C2C App
+# C2C App.
     This app helps in resources management, Client management and roles of an employee in a better optimised way to improve overall productivity of an employee and track finances of the project lifecycle.
 
 ## Run Locally/Installation
