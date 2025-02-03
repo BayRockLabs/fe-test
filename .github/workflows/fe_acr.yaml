@@ -45,7 +45,8 @@ jobs:
             --build-arg REACT_APP_UNLOCKED_ESTIMATION_EDIT=${{ secrets.REACT_APP_UNLOCKED_ESTIMATION_EDIT }} \
             --build-arg REACT_APP_BUSINESS_UNITS=${{ secrets.REACT_APP_BUSINESS_UNITS }} \
             -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:v1.0 \
-            -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:$IMAGE_TAG
+            -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:$IMAGE_TAG \
+            --load  # Explicitly use traditional build instead of buildx
 
       - name: "Push Docker image"
         run: |
