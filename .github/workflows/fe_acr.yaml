@@ -36,13 +36,10 @@ jobs:
             --build-arg REACT_APP_API_ENDPOINT=${{ secrets.REACT_APP_API_ENDPOINT }} \
             --build-arg REACT_APP_SERVER_URL=${{ secrets.REACT_APP_SERVER_URL }} \
             --build-arg APP_ENABLED_PAST_DATES=${{ secrets.APP_ENABLED_PAST_DATES }} \
-            --build-arg REACT_APP_API_ENDPOINT_AUTH_SERVICE=${{ secrets.REACT_APP_API_ENDPOINT_AUTH_SERVICE }} \
-            --build-arg REACT_APP_API_ENDPOINT_EXTRACT_SERVICE=${{ secrets.REACT_APP_API_ENDPOINT_EXTRACT_SERVICE }} \
             --build-arg REACT_APP_CLIENT_ID=${{ secrets.REACT_APP_CLIENT_ID }} \
             --build-arg REACT_APP_AUTHORITY_URL=${{ secrets.REACT_APP_AUTHORITY_URL }} \
             --build-arg REACT_APP_PROFILE=${{ secrets.REACT_APP_PROFILE }} \
-            --build-arg REACT_APP_UNLOCKED_ESTIMATION_EDIT=${{ secrets.REACT_APP_UNLOCKED_ESTIMATION_EDIT }} \
-            --build-arg REACT_APP_BUSINESS_UNITS=${{ secrets.REACT_APP_BUSINESS_UNITS }} \
+            --build-arg REACT_APP_ENABLE_BILLRATE_EDIT=${{ secrets.REACT_APP_ENABLE_BILLRATE_EDIT }} \
             -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:v1.0 \
             -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:${IMAGE_TAG}
           docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:v1.0
