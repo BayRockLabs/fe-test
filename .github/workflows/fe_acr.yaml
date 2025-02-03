@@ -32,7 +32,7 @@ jobs:
 
       - run: |
           IMAGE_TAG=${{ steps.vars.outputs.sha_short }}
-          docker build . \
+          docker buildx build . \
             --build-arg REACT_APP_API_ENDPOINT=${{ secrets.REACT_APP_API_ENDPOINT }} \
             --build-arg REACT_APP_SERVER_URL=${{ secrets.REACT_APP_SERVER_URL }} \
             --build-arg APP_ENABLED_PAST_DATES=${{ secrets.APP_ENABLED_PAST_DATES }} \
@@ -44,6 +44,6 @@ jobs:
             --build-arg REACT_APP_UNLOCKED_ESTIMATION_EDIT=${{ secrets.REACT_APP_UNLOCKED_ESTIMATION_EDIT }} \
             --build-arg REACT_APP_BUSINESS_UNITS=${{ secrets.REACT_APP_BUSINESS_UNITS }} \
             -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:v1.0 \
-            -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:${IMAGE_TAG} .
+            -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:${IMAGE_TAG}
           docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:v1.0
           docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/fe-env:${IMAGE_TAG}
